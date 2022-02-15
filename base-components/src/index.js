@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 
 const Foo = () => {
+  debugger;
   const [str] = useState("workd");
-  return <div>hello, {str}</div>;
+  console.log("useState");
+
+  return <div>hello,</div>;
 };
 
 export default [Foo];

@@ -1,0 +1,25 @@
+{
+  "name": "react-systemjs",
+  "version": "1.0.0",
+  "description": "1.cd base-components npm install && npm start 2.cd base-base-project npm install && npm start 3.open http://localhost:3000/",
+  "main": "index.js",
+  "scripts": {
+    "start:project": "npm  start --prefix base-project",
+    "start:components": "npm  start --prefix base-components",
+    "start": "concurrently \"npm run start:project\" \"npm run start:components\"",
+    "install_dep": "sh scripts/install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ytudt/react-systemjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ytudt/react-systemjs/issues"
+  },
+  "homepage": "https://github.com/ytudt/react-systemjs#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
