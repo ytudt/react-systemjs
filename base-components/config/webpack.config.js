@@ -200,8 +200,7 @@ module.exports = function (webpackEnv) {
     // This means they will be the "root" imports that are included in JS bundle.
     entry: paths.appIndexJs,
     externals: {
-      React: "React",
-      "react-dom": "ReactDom",
+      react: "React",
     },
     output: {
       libraryTarget: "system",
