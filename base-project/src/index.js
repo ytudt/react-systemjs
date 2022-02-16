@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import $ from "jquery";
+// import "./index.css";
+
+console.log("$", $);
+console.log("React", React);
+console.log("React", ReactDOM);
 
 window.System.import("baseC").then((res) => {
   const Components = res.default[0];
@@ -9,7 +14,16 @@ window.System.import("baseC").then((res) => {
   ReactDOM.render(
     <React.StrictMode>
       <Components />
+      {/* <div>12</div> */}
     </React.StrictMode>,
     document.getElementById("root")
   );
 });
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Components />
+//     {/* <div>12</div> */}
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );

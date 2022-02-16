@@ -4,7 +4,7 @@ const Foo = () => {
   const [str] = useState("workd");
   console.log("useState");
 
-  return <div>hello,</div>;
+  return <div>hello,{str}</div>;
 };
 
 export default [Foo];
